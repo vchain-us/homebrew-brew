@@ -1,0 +1,6 @@
+#!/usr/bin/env bash -ex
+
+brew update
+brew install Formula/vcn.rb
+heroku version
+heroku help
