@@ -1,19 +1,11 @@
 class Vcn < Formula
 	desc "VChain Code Notary Command-Line Interface"
 	homepage "https://www.codenotary.io"
-	url "https://github.com/vchain-us/vcn/archive/v0.5.1.tar.gz"
-	sha256 "59b74effb5192de42e0181a6cabdb4ecc9dc20818132b5814ac2078ea0be580a"
-
-	head do
-		url "https://github.com/vchain-us/vcn.git"
-	end
-
-	depends_on "go" => :build
+    url "https://github.com/vchain-us/vcn/releases/download/v0.5.1/vcn-v0.5.1-darwin-10.6-amd64"
+	sha256 "8bb283ed471df2495bdeb2a583641c48f301a012a76d3c011f7e416080ecdb82"
 
 	def install
-		ENV["GOBIN"] = buildpath
-		system "make", "install"
-		bin.install "./vcn" => "vcn"
+		bin.install "./vcn-v0.5.1-darwin-10.6-amd64" => "vcn"
 	end
 
 	test do
