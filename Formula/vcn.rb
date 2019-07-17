@@ -10,7 +10,11 @@ class Vcn < Formula
     end
 
     def install
-        bin.install "./vcn-v0.5.1-darwin-10.6-amd64" => "vcn"
+        if OS.mac?
+            bin.install "./vcn-v0.5.1-darwin-10.6-amd64" => "vcn"
+        elsif OS.linux?
+            bin.install "./vcn-v0.5.1-linux-amd64" => "vcn"
+        end
     end
 
     test do
