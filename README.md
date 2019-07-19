@@ -1,5 +1,4 @@
-vChain Homebrew Tap
--------------------
+# vChain Homebrew Tap [![CircleCI](https://circleci.com/gh/vchain-us/homebrew-brew.svg?style=svg)](https://circleci.com/gh/vchain-us/homebrew-brew)
 
 Install the vChain CodeNotary CLI with
 
