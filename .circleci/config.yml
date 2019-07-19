@@ -2,10 +2,10 @@ version: 2
 jobs:
   test:
     docker:
-      - image: linuxbrew/alpine
+      - image: linuxbrew/debian
     steps:
       - checkout
-      - run: brew update && brew cleanup && brew install Formula/vcn.rb
+      - run: brew install Formula/vcn.rb
 workflows:
   version: 2
   test:
