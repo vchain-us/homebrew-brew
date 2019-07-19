@@ -5,10 +5,7 @@ jobs:
       - image: linuxbrew/alpine
     steps:
       - checkout
-      - run: |
-        brew update  
-        brew cleanup
-        brew install Formula/vcn.rb
+      - run: brew update && brew cleanup && brew install Formula/vcn.rb
 workflows:
   version: 2
   test:
