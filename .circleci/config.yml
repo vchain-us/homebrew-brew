@@ -5,7 +5,7 @@ jobs:
       - image: linuxbrew/debian
     steps:
       - checkout
-      - run: brew install Formula/vcn.rb
+      - run: brew install Formula/vcn.rb && vcn verify $(which vcn)
 workflows:
   version: 2
   test:
