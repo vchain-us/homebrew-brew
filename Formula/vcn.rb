@@ -1,20 +1,20 @@
 class Vcn < Formula
     desc "VChain Code Notary Command-Line Interface"
     homepage "https://www.codenotary.io"
-    version "v0.5.4"
+    version "v0.6.0"
     if OS.mac?
-        url "https://github.com/vchain-us/vcn/releases/download/v0.5.4/vcn-v0.5.4-darwin-10.6-amd64"
-        sha256 "2d2f3699e1a0401006ad09a8efe6ebe499559dd5a78125f2eeea3c00abbc42ef"
+        url "https://github.com/vchain-us/vcn/releases/download/v0.6.0/vcn-v0.6.0-darwin-10.6-amd64"
+        sha256 "9f6b31ad344bbaacf033cd7f9308d5835fd71531666b8159d3e78ba943767857"
     elsif OS.linux?
-        url "https://github.com/vchain-us/vcn/releases/download/v0.5.4/vcn-v0.5.4-linux-amd64"
-        sha256 "e5029259de11b3daa4220bf2150f05bd8ddaec4de54c0f6543a9bbe558bd02e6"
+        url "https://github.com/vchain-us/vcn/releases/download/v0.6.0/vcn-v0.6.0-linux-amd64"
+        sha256 "5e0edaceed59ab794d477a70cbf1b44d51be590556aa8a439435defa4ce9a916"
     end
 
     def install
         if OS.mac?
-            bin.install "./vcn-v0.5.4-darwin-10.6-amd64" => "vcn"
+            bin.install "./vcn-v0.6.0-darwin-10.6-amd64" => "vcn"
         elsif OS.linux?
-            bin.install "./vcn-v0.5.4-linux-amd64" => "vcn"
+            bin.install "./vcn-v0.6.0-linux-amd64" => "vcn"
         end
     end
 
