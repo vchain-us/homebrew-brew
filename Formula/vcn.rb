@@ -1,13 +1,13 @@
 class Vcn < Formula
     desc "VChain Code Notary Command-Line Interface"
     homepage "https://www.codenotary.io"
-    version "v0.8.0"
+    version "v0.8.1"
     if OS.mac?
         url "https://github.com/vchain-us/vcn/releases/download/#{version}/vcn-#{version}-darwin-10.6-amd64"
-        sha256 "d197d6d1d724a978dab334b7a6bc5ce9ccb827321bdeab244b6fa50feb05b73f"
+        sha256 "82e553d8c7343cd8af2b66a1eb2461edfd1ee554267763206a0e59d33930056c"
     elsif OS.linux?
         url "https://github.com/vchain-us/vcn/releases/download/#{version}/vcn-#{version}-linux-amd64"
-        sha256 "fd67cb9db94c4f0f077f4ef1ccf922bf09ec3b3f8769d99d6bac44ca7a108136"
+        sha256 "713a441de9436175f376bd2ac662e3ecf1a042382af0d5a54627941a92d36198"
     end
 
     def install
